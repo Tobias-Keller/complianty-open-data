@@ -1,0 +1,59 @@
+bereich,kennzahl,seiten,anteil_prozent
+Überblick,Geprüfte .de-Websites (erfolgreich),1193438,
+Überblick,Technische Erfolgsquote der Aufrufe,,62.6
+Überblick,Seiten mit Cookie-Banner (CMP),555185,46.5
+Überblick,Tracking vor Einwilligung (streng),213915,17.9
+Überblick,Banner vorhanden und trackt trotzdem (Anteil der Banner-Seiten),116822,21.0
+Überblick,Kein Banner und Dritt-Tracking geladen,199219,16.7
+Weitere Befunde,Daten an Google vor Consent,176715,14.8
+Weitere Befunde,Daten an Meta vor Consent,38174,3.2
+Weitere Befunde,Daten an Google oder Meta vor Consent,199333,16.7
+Weitere Befunde,Cookies/Storage vor Consent gesetzt,108493,9.1
+Validierung,Klare Treffer (Blind-Stichprobe n=250),,59.6
+Validierung,Graufaelle (Blind-Stichprobe n=250),,27.2
+Validierung,Klare False Positives (n=250; 95%-Wilson-KI 9.6-18.0),,13.2
+Top-Dienste pre-consent (weite Zaehlung),Google Analytics 4,90175,
+Top-Dienste pre-consent (weite Zaehlung),Google Maps,46610,
+Top-Dienste pre-consent (weite Zaehlung),Matomo,43047,
+Top-Dienste pre-consent (weite Zaehlung),Sentry,38507,
+Top-Dienste pre-consent (weite Zaehlung),YouTube,37431,
+Top-Dienste pre-consent (weite Zaehlung),Google DoubleClick,32906,
+Top-Dienste pre-consent (weite Zaehlung),Meta Pixel,29136,
+Top-Dienste pre-consent (weite Zaehlung),Google Ads,26310,
+Top-Dienste pre-consent (weite Zaehlung),PagePulse,14150,
+Top-Dienste pre-consent (weite Zaehlung),Google Ad Traffic Quality,11530,
+Top-Dienste pre-consent (weite Zaehlung),Cloudflare Web Analytics,9279,
+Top-Dienste pre-consent (weite Zaehlung),Trustindex,8382,
+Top-Dienste pre-consent (weite Zaehlung),Facebook CDN,7996,
+Top-Dienste pre-consent (weite Zaehlung),PayPal,7649,
+Top-Dienste pre-consent (weite Zaehlung),Calendly,7009,
+Top-Dienste pre-consent (weite Zaehlung),Vimeo,6571,
+Top-Dienste pre-consent (weite Zaehlung),YouTube (No-Cookie),6445,
+Top-Dienste pre-consent (weite Zaehlung),Google AdSense,6239,
+Top-Dienste pre-consent (weite Zaehlung),Facebook,5981,
+Top-Dienste pre-consent (weite Zaehlung),Microsoft Clarity,5922,
+CMP-Marktanteil,generisch erkannt,150254,27.1
+CMP-Marktanteil,Borlabs Cookie,62871,11.3
+CMP-Marktanteil,Complianz,54695,9.9
+CMP-Marktanteil,Cookieconsent,40833,7.4
+CMP-Marktanteil,Wix Cookie Consent,29223,5.3
+CMP-Marktanteil,Usercentrics,29055,5.2
+CMP-Marktanteil,Cookiebot,23310,4.2
+CMP-Marktanteil,Cookie Notice (dFactory),23102,4.2
+CMP-Marktanteil,Jimdo Cookie Control,23028,4.1
+CMP-Marktanteil,Real Cookie Banner,22822,4.1
+CMP-Marktanteil,CCM19,14664,2.6
+CMP-Marktanteil,Cookie Law Info,13594,2.4
+CMP-Marktanteil,CookieYes,12242,2.2
+CMP-Marktanteil,Klaro,9086,1.6
+CMP-Marktanteil,Consentmanager,7531,1.4
+CMP-Marktanteil,Moove GDPR,6288,1.1
+CMP-Marktanteil,Enfold Cookie Consent,3762,0.7
+CMP-Marktanteil,Shopware Cookie Consent,3692,0.7
+CMP-Marktanteil,Tarteaucitron,3111,0.6
+CMP-Marktanteil,OneTrust,3065,0.6
+Kategorie (streng),Analytics,159814,
+Kategorie (streng),Advertising,62090,
+Kategorie (streng),Retargeting,35187,
+Kategorie (streng),A/B-Testing,2273,
+Kategorie (streng),Session-Recording,1335,
