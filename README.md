@@ -1,12 +1,15 @@
 # GDPR Pre-Consent Tracking on 1.2M German Websites
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22009986.svg)](https://doi.org/10.5281/zenodo.22009986)
+
 Aggregated results from the 2026 [Complianty](https://complianty.de/) study on whether German
 websites load tracking services **before** the visitor gives cookie consent.
 
 **Canonical source & full study (German):**
 https://complianty.de/studie/dsgvo-verstoesse-deutsche-websites-2026/
 
-Also available on [Kaggle](https://www.kaggle.com/datasets/tobiaspaulik/gdpr-pre-consent-tracking-on-1-2m-german-websites).
+Also available on [Zenodo](https://doi.org/10.5281/zenodo.22009986) (citable DOI) and
+[Kaggle](https://www.kaggle.com/datasets/tobiaspaulik/gdpr-pre-consent-tracking-on-1-2m-german-websites).
 
 Version 1.0 · data as of 2026-06-18 · released 2026-08-19
 
@@ -73,6 +76,7 @@ commercial interest in the topic is hereby disclosed.
 > Complianty (2026): Tracking before consent on German websites. Data analysis of
 > 1,193,438 successfully scanned .de websites, as of June 2026.
 > https://complianty.de/studie/dsgvo-verstoesse-deutsche-websites-2026/
+> DOI: [10.5281/zenodo.22009986](https://doi.org/10.5281/zenodo.22009986)
 
 ## Changelog
 
