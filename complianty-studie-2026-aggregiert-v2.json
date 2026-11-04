@@ -1,0 +1,339 @@
+{
+  "titel": "Tracking vor der Einwilligung auf deutschen Websites (2026), Version 2",
+  "version": "2.0",
+  "datenstand": "2026-09-14 bis 2026-11-02",
+  "aufbereitet": "2026-11-03",
+  "doi": "10.5281/zenodo.23939754",
+  "vorgaenger": {
+    "version": "1.0",
+    "datenstand": "2026-06-18",
+    "doi": "10.5281/zenodo.22009986",
+    "dateien": "complianty-studie-2026-aggregiert.csv / .json (unverändert abrufbar)"
+  },
+  "herausgeber": "Complianty",
+  "quelle": "https://complianty.de/studie/dsgvo-verstoesse-deutsche-websites-2026/",
+  "lizenz": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/deed.de",
+    "bedingung": "Nutzung, Weitergabe und Bearbeitung frei (auch kommerziell), solange 'Complianty' als Quelle genannt und auf die Quell-URL verlinkt wird."
+  },
+  "zitiervorschlag": "Complianty (2026): Tracking vor der Einwilligung auf deutschen Websites. Datenauswertung von 3.158.515 erfolgreich geprüften .de-Websites, Version 2, Stand November 2026. complianty.de/studie. DOI: 10.5281/zenodo.23939754",
+  "methodik_kurz": "Automatisierte Browser-Messung mit frischem Browser-Kontext (keine Cookies/kein Storage): Netzwerk-Mitschnitt vor der Einwilligung, dann Consent-Klick, dann Delta-Messung. 'Befund' = messbarer technischer Sachverhalt (Tracking vor dem Consent-Klick), keine rechtliche Bewertung des Einzelfalls. Server-seitiges Tracking ist netzwerkseitig nicht sichtbar, alle Quoten sind konservative Untergrenzen. Es werden ausschließlich Aggregate veröffentlicht, keine Einzelseiten. Pro Domain zählt der jüngste erfolgreiche Scan. Alle Scans werden mit dem aktuellen Fingerprint-Katalog (3.140 Signaturen) klassifiziert.",
+  "definitionen": {
+    "streng": "Nur echtes Tracking: Analytics, Werbung, Retargeting, Session-Recording, A/B-Testing, die laut Katalog eine Einwilligung erfordern. Maps-/Video-Embeds, Monitoring und Consent-Mode-denied-Pings sind bewusst ausgeschlossen (rechtliche Einordnung im Einzelfall umstritten).",
+    "weit": "Zusätzlich Maps-/Video-Embeds, Monitoring u. ä. Nur als Methoden-Transparenz, nicht Headline.",
+    "kernbefund": "Seiten mit Cookie-Banner, die trotzdem vor der Einwilligung echtes Tracking (streng) laden, bezogen auf alle Seiten mit Banner."
+  },
+  "korpus": {
+    "gepruefte_websites_fehlerfrei": 3158515,
+    "technische_erfolgsquote_prozent": null,
+    "technische_erfolgsquote_hinweis": "In Version 2 nicht ausgewiesen: Der Korpus enthält ausschließlich erfolgreich gescannte Seiten, die Zahl der Fehlversuche wurde nicht auf denselben Bestand bezogen.",
+    "mit_cookie_banner_cmp": {
+      "seiten": 1413507,
+      "anteil_prozent": 44.8
+    }
+  },
+  "headline_streng": {
+    "tracking_vor_einwilligung": {
+      "seiten": 568066,
+      "anteil_prozent_korpus": 18.0
+    },
+    "tracking_vor_einwilligung_weit": {
+      "seiten": 964861,
+      "anteil_prozent_korpus": 30.5
+    },
+    "banner_vorhanden_und_trackt_trotzdem": {
+      "seiten": 279721,
+      "anteil_prozent_der_banner_seiten": 19.8
+    },
+    "kein_banner_und_dritt_tracking_geladen": {
+      "seiten": 616873,
+      "anteil_prozent_korpus": 19.5
+    }
+  },
+  "weitere_befunde": {
+    "hinweis": "Rohmessung des Scans, Definition unverändert zu Version 1. Der Anstieg bei Cookies/Storage (9,1 % auf 14,0 %) steckt bereits in den Rohdaten der neueren Scans. Ob er Trend oder geänderte Scanner-Messung ist, ist nicht geklärt; bitte nicht als Trend zitieren.",
+    "daten_an_google_vor_consent": {
+      "seiten": 487231,
+      "anteil_prozent_korpus": 15.4
+    },
+    "daten_an_meta_vor_consent": {
+      "seiten": 92711,
+      "anteil_prozent_korpus": 2.9
+    },
+    "daten_an_google_oder_meta_vor_consent": {
+      "seiten": 539863,
+      "anteil_prozent_korpus": 17.1
+    },
+    "cookies_oder_storage_vor_consent_gesetzt": {
+      "seiten": 440725,
+      "anteil_prozent_korpus": 14.0
+    }
+  },
+  "validierung": {
+    "methode": "Blinde Re-Beurteilung einer Stichprobe (Scanner-Verdict verdeckt) anhand der rohen Netzwerk-Evidenz; automatisierte Re-Adjudikation durch ein separates Sprachmodell, KEIN menschliches Experten-Panel. Stichprobe: 200 Seiten mit bestätigtem Befund plus 50 Consent-Mode-/Transfer-Fälle.",
+    "stichprobe_n": 250,
+    "klare_treffer_prozent": 63.2,
+    "graufaelle_prozent": 33.2,
+    "klare_false_positives_prozent": 3.6,
+    "false_positives_95_wilson_ki": "1.9 bis 6.7",
+    "hinweis": "Die Stichprobe ist nicht identisch aufgebaut wie in Version 1 (dort geschichtet über alle Befundarten, FP 13,2 % bei KI 9,6 bis 18,0 %). Die FP-Rate ist daher nur eingeschränkt mit Version 1 vergleichbar. Die strenge Kategorie-Filterung behält 58,9 % der weiten Zählung."
+  },
+  "top_dienste_pre_consent_weite_zaehlung": {
+    "hinweis": "Weite Zählung (distinct Seiten), mit dem aktuellen Katalog neu klassifiziert. Enthält auch Dienste (z. B. Maps-/Video-Embeds, Monitoring), die im strengen Kernwert bewusst NICHT gewertet werden. Ob ein Dienst vor oder nach der Einwilligung lädt, hängt allein von der Einbindung auf der jeweiligen Seite ab, nicht vom Dienst selbst. Die Liste in Version 1 war eine Rohzählung des damaligen Scans und ist mit dieser nur eingeschränkt vergleichbar.",
+    "daten": [
+      {
+        "dienst": "Google Analytics 4",
+        "seiten": 215908
+      },
+      {
+        "dienst": "Google Ads",
+        "seiten": 183472
+      },
+      {
+        "dienst": "Google DoubleClick",
+        "seiten": 115179
+      },
+      {
+        "dienst": "Google Maps",
+        "seiten": 110022
+      },
+      {
+        "dienst": "Matomo",
+        "seiten": 102038
+      },
+      {
+        "dienst": "Sentry",
+        "seiten": 97087
+      },
+      {
+        "dienst": "Universal Analytics",
+        "seiten": 92003
+      },
+      {
+        "dienst": "YouTube",
+        "seiten": 85719
+      },
+      {
+        "dienst": "Google Ad Traffic Quality",
+        "seiten": 63233
+      },
+      {
+        "dienst": "Meta Pixel",
+        "seiten": 59566
+      },
+      {
+        "dienst": "Google AdSense",
+        "seiten": 50354
+      },
+      {
+        "dienst": "Duda Performance Metrics",
+        "seiten": 35686
+      },
+      {
+        "dienst": "PagePulse",
+        "seiten": 33501
+      },
+      {
+        "dienst": "Snowplow",
+        "seiten": 32163
+      },
+      {
+        "dienst": "Cloudflare Web Analytics",
+        "seiten": 24669
+      },
+      {
+        "dienst": "Trustindex",
+        "seiten": 22748
+      },
+      {
+        "dienst": "Facebook CDN",
+        "seiten": 18881
+      },
+      {
+        "dienst": "PayPal",
+        "seiten": 18836
+      },
+      {
+        "dienst": "Microsoft Clarity",
+        "seiten": 16635
+      },
+      {
+        "dienst": "Vimeo",
+        "seiten": 16390
+      }
+    ]
+  },
+  "kategorien_streng_distinct_sites": [
+    {
+      "kategorie": "Analytics",
+      "seiten": 508149
+    },
+    {
+      "kategorie": "Advertising",
+      "seiten": 271997
+    },
+    {
+      "kategorie": "Retargeting",
+      "seiten": 130475
+    },
+    {
+      "kategorie": "A/B-Testing",
+      "seiten": 6741
+    },
+    {
+      "kategorie": "Session-Recording",
+      "seiten": 4514
+    }
+  ],
+  "cmp_marktanteile": {
+    "hinweis": "Reiner Marktüberblick der erkannten Banner-Lösungen, KEINE Befundquote pro Produkt. Die Pre-Consent-Befunde hängen an der technischen Einbindung der jeweiligen Seite, nicht am Banner-Produkt; eine Aufschlüsselung der Befunde nach CMP-Produkt wird bewusst nicht vorgenommen.",
+    "daten": [
+      {
+        "cmp": "(generisch erkannt)",
+        "seiten": 378420,
+        "anteil_prozent": 26.8
+      },
+      {
+        "cmp": "Borlabs Cookie",
+        "seiten": 148273,
+        "anteil_prozent": 10.5
+      },
+      {
+        "cmp": "Complianz",
+        "seiten": 142480,
+        "anteil_prozent": 10.1
+      },
+      {
+        "cmp": "Cookieconsent",
+        "seiten": 105897,
+        "anteil_prozent": 7.5
+      },
+      {
+        "cmp": "Usercentrics",
+        "seiten": 73213,
+        "anteil_prozent": 5.2
+      },
+      {
+        "cmp": "Wix Cookie Consent",
+        "seiten": 70180,
+        "anteil_prozent": 5.0
+      },
+      {
+        "cmp": "Real Cookie Banner",
+        "seiten": 56794,
+        "anteil_prozent": 4.0
+      },
+      {
+        "cmp": "Cookiebot",
+        "seiten": 56490,
+        "anteil_prozent": 4.0
+      },
+      {
+        "cmp": "Cookie Notice (dFactory)",
+        "seiten": 53206,
+        "anteil_prozent": 3.8
+      },
+      {
+        "cmp": "Jimdo Cookie Control",
+        "seiten": 45561,
+        "anteil_prozent": 3.2
+      },
+      {
+        "cmp": "CCM19",
+        "seiten": 41410,
+        "anteil_prozent": 2.9
+      },
+      {
+        "cmp": "Cookie Law Info",
+        "seiten": 30228,
+        "anteil_prozent": 2.1
+      },
+      {
+        "cmp": "CookieYes",
+        "seiten": 29740,
+        "anteil_prozent": 2.1
+      },
+      {
+        "cmp": "Shopify Privacy Banner",
+        "seiten": 23363,
+        "anteil_prozent": 1.7
+      },
+      {
+        "cmp": "Klaro",
+        "seiten": 23038,
+        "anteil_prozent": 1.6
+      },
+      {
+        "cmp": "Consentmanager",
+        "seiten": 18096,
+        "anteil_prozent": 1.3
+      },
+      {
+        "cmp": "Moove GDPR",
+        "seiten": 13808,
+        "anteil_prozent": 1.0
+      },
+      {
+        "cmp": "Shopware Cookie Consent",
+        "seiten": 9822,
+        "anteil_prozent": 0.7
+      },
+      {
+        "cmp": "Enfold Cookie Consent",
+        "seiten": 9497,
+        "anteil_prozent": 0.7
+      },
+      {
+        "cmp": "OneTrust",
+        "seiten": 9379,
+        "anteil_prozent": 0.7
+      }
+    ]
+  },
+  "vergleich_zu_version_1": {
+    "hinweis": "Version 1 wie veröffentlicht, und derselbe Juni-Korpus mit dem heutigen Katalog neu klassifiziert (Gegenprobe). Die Differenz dieser beiden Spalten ist der reine Katalog-Effekt (rund 2 % relativ). Der Korpus in Version 2 ist größer und anders zusammengesetzt, eine Trendaussage ist daraus nicht ableitbar.",
+    "kennzahlen": {
+      "mit_cookie_banner_prozent": {
+        "v1_veroeffentlicht": 46.5,
+        "v1_mit_heutigem_katalog": 46.5,
+        "v2": 44.8
+      },
+      "streng_prozent": {
+        "v1_veroeffentlicht": 17.9,
+        "v1_mit_heutigem_katalog": 18.3,
+        "v2": 18.0
+      },
+      "weit_prozent": {
+        "v1_veroeffentlicht": 31.1,
+        "v1_mit_heutigem_katalog": 31.7,
+        "v2": 30.5
+      },
+      "kernbefund_prozent": {
+        "v1_veroeffentlicht": 21.0,
+        "v1_mit_heutigem_katalog": 21.3,
+        "v2": 19.8
+      },
+      "kein_banner_und_dritt_tracking_prozent": {
+        "v1_veroeffentlicht": 16.7,
+        "v1_mit_heutigem_katalog": 16.6,
+        "v2": 19.5
+      },
+      "daten_an_google_prozent": {
+        "v1_veroeffentlicht": 14.8,
+        "v1_mit_heutigem_katalog": 14.8,
+        "v2": 15.4
+      },
+      "daten_an_meta_prozent": {
+        "v1_veroeffentlicht": 3.2,
+        "v1_mit_heutigem_katalog": 3.2,
+        "v2": 2.9
+      },
+      "cookies_storage_prozent": {
+        "v1_veroeffentlicht": 9.1,
+        "v1_mit_heutigem_katalog": 9.1,
+        "v2": 14.0
+      }
+    }
+  }
+}
